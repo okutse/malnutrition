@@ -1,5 +1,5 @@
 *********************************************************************
-*Trends and Patterns of Disparities in Kenyan Child Malnutrition Burden
+*Trends of Socio-Economic Disparities in Child Malnutrition (2014 -- 2014)
 *Amos Ochieng Okutse
 *okutseamos@gmail.com
 *Henry Athiany
