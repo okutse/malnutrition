@@ -41,7 +41,7 @@ keep v021 v023 v005 hw70 hw71 hw72 b4 v102 v130 v106 bord hw1 v190 v024 m15 b11 
 	rename v024 region 		/*de facto region of residence */
 	rename m15 delivery_place /* place of delivery */
 	rename b11 birth_interval /* Preceding birth interval is calculated as the difference in months between the current birth and the previous birth */
-	rename v212 age_at_firstbrth /* age of respondent at first birth computed as the difference between the birth date of the first-born child and birth date of the woman */
+	*rename v212 age_at_firstbrth /* age of respondent at first birth computed as the difference between the birth date of the first-born child and birth date of the woman */
 	
 	
 	
@@ -49,7 +49,15 @@ keep v021 v023 v005 hw70 hw71 hw72 b4 v102 v130 v106 bord hw1 v190 v024 m15 b11 
 	
 	
 	
-	
+* TO DO
+* check all missing values and other inconsistencies in all variables for analysis	
+* check how the variables are coded to see which levels to use as reference in analysis
+* create the categorical versions of variables of interest including child's age, education, mothers age, fathers education, maternal bmi, maternal height, maternal working status, 
+* save the cleaned data set after all modifications
+
+* clean the DHS 2022 data and save
+
+* append the 2014 and 2022 data files for final analysis
 
 
 *rename b4 sex
@@ -65,7 +73,10 @@ keep v021 v023 v005 hw70 hw71 hw72 b4 v102 v130 v106 bord hw1 v190 v024 m15 b11 
 *rename v024 region
 rename m15 delivery_place
 rename b11 birth_interval
-rename v212 motherage_firstbirth
+mothers_age
+mothers wrking status
+
+*rename v212 motherage_firstbirth
 //
 *check on some of the variables and replace missing value codes
 replace waz = . if waz == 9996 | waz == 9998
