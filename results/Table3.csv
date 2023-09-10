@@ -1,0 +1,5 @@
+﻿,Stunted (height for age < -2SD),,Underweight (weight for age < -2SD),,Wasted (weight for height < -2SD),
+,CI (SE),p*,CI (SE),p*,CI (SE),p*
+Year 2014,-0.15 (0.01),0.00,-0.27 (0.02),0.00,12.37 (22.61),0.58
+Year 2022,-0.79 (0.01),0.00,-0.88 (0.01),0.00,-1.96 (0.05),0.00
+Diff,-0.64 (0.01),0.00,-0.61 (0.02),0.00,-14.33 (22.62),0.53

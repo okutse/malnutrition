@@ -1,0 +1,102 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\bibstyle{sn-basic}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\Newlabel{1}{1}
+\Newlabel{2}{2}
+\Newlabel{3}{3}
+\citation{who2023}
+\citation{who2023}
+\citation{IEG2022}
+\citation{global}
+\citation{Bhavnani2023}
+\citation{KNBSICF2023}
+\citation{USAID2018}
+\citation{stratton2003}
+\citation{Pelletier1995,Pelletier2003}
+\citation{Rice2000,jonah2018,victora2008,kar2008,mendez1999,walker2015,rabbani2016}
+\citation{jonah2018}
+\citation{jonah2018}
+\citation{deOnis2016}
+\citation{Hoddinott2013,Zere2003}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\newlabel{sec1}{{1}{2}{Introduction}{section.1}{}}
+\citation{jonah2018}
+\citation{Bloom2004,Ranis2000}
+\citation{Marmot2002,Ettner1996}
+\citation{jonah2018,Haddad2015}
+\@writefile{toc}{\contentsline {subsection}{\numberline {1.1}Socioeconomic disparities in child malnutrition}{3}{subsection.1.1}\protected@file@percent }
+\newlabel{socioeconomic-disparities-in-child-malnutrition}{{1.1}{3}{Socioeconomic disparities in child malnutrition}{subsection.1.1}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{4}{section.2}\protected@file@percent }
+\newlabel{sec11}{{2}{4}{Methods}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Study data}{4}{subsection.2.1}\protected@file@percent }
+\newlabel{study-data}{{2.1}{4}{Study data}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Variables}{4}{subsection.2.2}\protected@file@percent }
+\newlabel{variables}{{2.2}{4}{Variables}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Outcome}{4}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{outcome}{{2.2.1}{4}{Outcome}{subsubsection.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Adjustment covariates}{4}{subsubsection.2.2.2}\protected@file@percent }
+\newlabel{adjustment-covariates}{{2.2.2}{4}{Adjustment covariates}{subsubsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Measurement of socioeconomic status}{4}{subsection.2.3}\protected@file@percent }
+\newlabel{measurement-of-socioeconomic-status}{{2.3}{4}{Measurement of socioeconomic status}{subsection.2.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Statistical analysis}{4}{subsection.2.4}\protected@file@percent }
+\newlabel{statistical-analysis}{{2.4}{4}{Statistical analysis}{subsection.2.4}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.1}Analysis of disparities in child malnutrition}{4}{subsubsection.2.4.1}\protected@file@percent }
+\newlabel{analysis-of-disparities-in-child-malnutrition}{{2.4.1}{4}{Analysis of disparities in child malnutrition}{subsubsection.2.4.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.2}Decomposition of socioeconomic inequities in child malnutrition}{4}{subsubsection.2.4.2}\protected@file@percent }
+\newlabel{decomposition-of-socioeconomic-inequities-in-child-malnutrition}{{2.4.2}{4}{Decomposition of socioeconomic inequities in child malnutrition}{subsubsection.2.4.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.4.3}Determinants of child malnutrition}{4}{subsubsection.2.4.3}\protected@file@percent }
+\newlabel{determinants-of-child-malnutrition}{{2.4.3}{4}{Determinants of child malnutrition}{subsubsection.2.4.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{4}{section.3}\protected@file@percent }
+\newlabel{sec2}{{3}{4}{Results}{section.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{4}{section.4}\protected@file@percent }
+\newlabel{sec12}{{4}{4}{Discussion}{section.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{4}{section.5}\protected@file@percent }
+\newlabel{sec13}{{5}{4}{Conclusion}{section.5}{}}
+\@writefile{toc}{\contentsline {subparagraph}{Supplementary information}{4}{section*.2}\protected@file@percent }
+\bibdata{bibliography.bib}
+\bibcite{global}{{1}{????}{{glo}}{{}}}
+\bibcite{USAID2018}{{2}{2018}{{USA}}{{}}}
+\@writefile{toc}{\contentsline {subparagraph}{Acknowledgments}{5}{section*.3}\protected@file@percent }
+\newlabel{declarations}{{5}{5}{Declarations}{section*.4}{}}
+\@writefile{toc}{\contentsline {section}{Declarations}{5}{section*.4}\protected@file@percent }
+\@writefile{toc}{\contentsline {section}{\numberline {A}Section title of first appendix}{5}{appendix.a.A}\protected@file@percent }
+\newlabel{secA1}{{A}{5}{Section title of first appendix}{appendix.a.A}{}}
+\bibcite{IEG2022}{{3}{2022}{{IEG}}{{}}}
+\bibcite{KNBSICF2023}{{4}{2023}{{KNB}}{{}}}
+\bibcite{who2023}{{5}{2023}{{BANK}}{{}}}
+\bibcite{Bhavnani2023}{{6}{2023}{{Bhavnani et~al}}{{Bhavnani, Schlager, Donnay, Reul, Schenker, Stauffer, and Patel}}}
+\bibcite{Bloom2004}{{7}{2004}{{Bloom et~al}}{{Bloom, Canning, and Sevilla}}}
+\bibcite{Ettner1996}{{8}{1996}{{Ettner}}{{}}}
+\bibcite{Haddad2015}{{9}{2015}{{Haddad et~al}}{{Haddad, Achadi, Bendech, Ahuja, Bhatia, Bhutta, Blössner, Borghi, Colecraft, Onis, Eriksen, Fanzo, Flores-Ayala, Fracassi, Kimani-Murage, Koukoubou, Krasevec, Newby, Nugent, Oenema, Martin-Prével, Randel, Requejo, Shyam, Udomkesmalee, and Reddy}}}
+\bibcite{Hoddinott2013}{{10}{2013}{{Hoddinott et~al}}{{Hoddinott, Alderman, Behrman, Haddad, and Horton}}}
+\bibcite{jonah2018}{{11}{2018}{{Jonah et~al}}{{Jonah, Sambu, and May}}}
+\bibcite{kar2008}{{12}{2008}{{Kar et~al}}{{Kar, Rao, and Chandramouli}}}
+\bibcite{Marmot2002}{{13}{2002}{{Marmot}}{{}}}
+\bibcite{mendez1999}{{14}{1999}{{Mendez and Adair}}{{}}}
+\bibcite{deOnis2016}{{15}{2016}{{de~Onis and Branca}}{{}}}
+\bibcite{Pelletier2003}{{16}{2003}{{Pelletier and Frongillo}}{{}}}
+\bibcite{Pelletier1995}{{17}{1995}{{Pelletier et~al}}{{Pelletier, Frongillo, Schroeder, and Habicht}}}
+\bibcite{rabbani2016}{{18}{2016}{{Rabbani et~al}}{{Rabbani, Khan, Yusuf, and Adams}}}
+\bibcite{Ranis2000}{{19}{2000}{{Ranis et~al}}{{Ranis, Stewart, and Ramirez}}}
+\bibcite{Rice2000}{{20}{2000}{{Rice et~al}}{{Rice, Sacco, Hyder, and Black}}}
+\bibcite{stratton2003}{{21}{2003}{{Stratton et~al}}{{Stratton, Green, and Elia}}}
+\bibcite{victora2008}{{22}{2008}{{Victora et~al}}{{Victora, Adair, Fall, Hallal, Martorell, Richter, and Sachdev}}}
+\bibcite{walker2015}{{23}{2015}{{Walker et~al}}{{Walker, Chang, Wright, Osmond, and Grantham-McGregor}}}
+\bibcite{Zere2003}{{24}{2003}{{Zere and McIntyre}}{{}}}
+\gdef \@abspage@last{7}

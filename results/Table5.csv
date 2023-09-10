@@ -1,0 +1,16 @@
+﻿,Stunting (height for age < -2SD),,,,Underweight (weight for age < -2SD),,,
+Year ,2014,,2022,,2014,,2022,
+,Concentration Index,% Contribution,Concentration Index,% Contribution,Concentration Index,% Contribution,Concentration Index,% Contribution
+Childs sex,-0.002,-0.003,-0.003,-0.005,-0.003,-0.005,-0.003,-0.004
+Residence,-0.540,-0.332,-0.617,-0.634,-0.617,-0.636,-0.617,-0.636
+Religion,-0.050,-0.007,-0.019,-0.001,-0.020,-0.018,-0.020,-0.018
+Mothers education,0.390,0.226,0.449,-0.165,0.449,0.589,0.449,0.589
+Mothers age (years),-0.012,-0.012,0.040,0.011,0.040,-0.011,0.040,-0.011
+Mothers work,0.078,-0.021,0.180,-0.021,0.180,0.005,0.180,0.005
+Fathers education,0.404,-0.006,0.494,0.275,0.494,0.390,0.494,0.390
+Delivery place,0.332,0.046,0.181,-0.051,0.181,0.003,0.181,0.003
+Region,0.131,0.034,0.122,0.088,0.122,0.084,0.122,-0.026
+Birth interval (months),0.110,0.078,0.098,0.069,-0.216,0.068,0.098,0.068
+Birth order number,-0.154,0.163,-0.144,0.057,-0.144,-0.029,-0.144,-0.029
+Childs age (months),0.003,-0.003,-0.002,0.006,-0.002,0.003,-0.002,0.003
+Wealth index,0.677,0.896,0.693,1.744,0.693,0.969,0.693,0.969
