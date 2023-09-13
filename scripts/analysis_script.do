@@ -17,10 +17,11 @@ cd "/Users/aokutse/Desktop/malnutrition/results"
 svyset psu [pweight = wt], strata(stratum) singleunit(centered) vce(linearized) // singleunit(centered) option accounts for the case if there is a single PSU within a stratum and adjusts for the possibility of correlated obs within the strata. vce(linearized) option uses the Taylor expansion for variance estimation which is efficient
 
 // Table 1: Weighted prevalence of child malnutrition in Kenya by selected factors
-svy: tab syear, count column perc format(%9.1f) // weighted sample size and proportion of n by year
+svy: tab syear, count column perc format(%9.0f) // weighted sample size and proportion of n by year
 
+svy: tab child_sex if syear == 0, count column perc format(%9.0f)
 // 2014 stunting
-svy: tab stunted if syear == 0, count column perc format(%9.1f)
+svy: tab stunted if syear == 0, count column perc format(%9.0f)
 svy: tab child_sex stunted if syear == 0, count column perc format(%9.1f)
 svy: tab residence stunted if syear == 0, count column perc format(%9.1f)
 svy: tab religion stunted if syear == 0, count column perc format(%9.1f)
@@ -42,7 +43,7 @@ svy: regress stunted birth_interval if syear == 0	// test of significance of dif
 		
 		
 // 2014 underweight
-svy: tab underweight if syear == 0, count column perc format(%9.1f)
+svy: tab underweight if syear == 0, count column perc format(%9.0f)
 svy: tab child_sex underweight if syear == 0, count column perc format(%9.1f)
 svy: tab residence underweight if syear == 0, count column perc format(%9.1f)
 svy: tab religion underweight if syear == 0, count column perc format(%9.1f)
@@ -64,7 +65,7 @@ svy: regress underweight birth_interval if syear == 0	// test of significance of
 
 
 // 2014 wasting
-svy: tab wasted if syear == 0, count column perc format(%9.1f)
+svy: tab wasted if syear == 0, count column perc format(%9.0f)
 svy: tab child_sex wasted if syear == 0, count column perc format(%9.1f)
 svy: tab residence wasted if syear == 0, count column perc format(%9.1f)
 svy: tab religion wasted if syear == 0, count column perc format(%9.1f)
@@ -85,7 +86,7 @@ svy: regress wasted birth_interval if syear == 0	// test of significance of diff
 
 ////////////////////////////////////////////////////////////////////////////////
 // 2022 stunting
-svy: tab stunted if syear == 1, count column perc format(%9.1f)
+svy: tab stunted if syear == 1, count column perc format(%9.0f)
 svy: tab child_sex stunted if syear == 1, count column perc format(%9.1f)
 svy: tab residence stunted if syear == 1, count column perc format(%9.1f)
 svy: tab religion stunted if syear == 1, count column perc format(%9.1f)
@@ -107,7 +108,7 @@ svy: regress stunted birth_interval if syear == 1	// test of significance of dif
 		
 		
 // 2022 underweight
-svy: tab underweight if syear == 1, count column perc format(%9.1f)
+svy: tab underweight if syear == 1, count column perc format(%9.0f)
 svy: tab child_sex underweight if syear == 1, count column perc format(%9.1f)
 svy: tab residence underweight if syear == 1, count column perc format(%9.1f)
 svy: tab religion underweight if syear == 1, count column perc format(%9.1f)
@@ -129,7 +130,7 @@ svy: regress underweight birth_interval if syear == 1	// test of significance of
 
 
 // 2022 wasting
-svy: tab wasted if syear == 1, count column perc format(%9.1f)
+svy: tab wasted if syear == 1, count column perc format(%9.0f)
 svy: tab child_sex wasted if syear == 1, count column perc format(%9.1f)
 svy: tab residence wasted if syear == 1, count column perc format(%9.1f)
 svy: tab religion wasted if syear == 1, count column perc format(%9.1f)
@@ -430,6 +431,92 @@ lassogof mod_stunt, over(sample) postselection // evaluation of the lasso model
 //margins, dydx(*)
 //marginsplot
 
+/////////////////////////////////////
 
+// revised code
+* Setting up the complex survey design
+use "/Users/aokutse/Desktop/malnutrition/cleaned/kdhs2014.dta", clear
+* Setting up the complex survey design
+svyset psu [pweight = wt], strata(stratum) singleunit(centered) vce(linearized)
+
+* Calculation of Concentration Index for the Outcome
+conindex stun, rank(wealth_index) bounded limits(0 1) wagstaff svy
+sca CI = r(CI)
+
+* Variables list without factor variable notation
+global X child_sex residence religion maternal_edu maternal_age maternal_work paternal_edu delivery_place region wealth_index 
+
+* GLM modeling using factor variable notation for categorical variables
+svy: glm stun i.child_sex i.residence i.religion i.maternal_edu i.maternal_age i.maternal_work i.paternal_edu i.delivery_place i.region i.wealth_index, family(binomial) link(logit)
+
+* Calculate average marginal effects
+qui margins, dydx(*) post
+mat coeff = e(b)
+
+* Mean of outcome variable
+sum stun [aw=wt]
+sca m_y = r(mean)
+
+* Create a temporary dataset to store decomposition results
+clear
+gen varname = ""
+gen category = ""
+gen elasticity = .
+gen conc_index = .
+gen contribution = .
+gen perc_contrib = .
+
+* Decomposition
+foreach x of global X {
+
+    if inlist("`x'", "child_sex", "residence", "religion", "maternal_edu", "maternal_age", "maternal_work", "paternal_edu", "delivery_place", "region", "wealth_index") {
+        
+        qui levelsof `x', local(categories)
+
+        foreach cat of local categories {
+            capture conindex `x' if `x' == `cat', rank(wealth_index) bounded limits(0 1) wagstaff svy
+
+            if _rc != 0 {
+                continue
+            }
+
+            local CI_`x'_`cat' = r(CI)
+            local b_`x'_`cat' = coeff[1,"`x'[`cat']"]
+            local elas_`x'_`cat' = (b_`x'_`cat' * r(mean))/m_y
+            local con_`x'_`cat' = elas_`x'_`cat' * CI_`x'_`cat'
+            local prcnt_`x'_`cat' = con_`x'_`cat'/CI
+            
+            * Store in dataset
+            replace varname = "`x'" in 1
+            replace category = "`cat'" in 1
+            replace elasticity = `elas_`x'_`cat'' in 1
+            replace conc_index = `CI_`x'_`cat'' in 1
+            replace contribution = `con_`x'_`cat'' in 1
+            replace perc_contrib = `prcnt_`x'_`cat'' in 1
+
+            * Prepare for next result
+            set obs _N+1
+        }
+    } else {
+
+        conindex `x', rank(wealth_index) bounded limits(0 1) wagstaff svy
+
+        local CI_`x' = r(CI)
+        local b_`x' = coeff[1,"`x'"]
+        local elas_`x' = (b_`x' * r(mean))/m_y
+        local con_`x' = elas_`x' * CI_`x'
+        local prcnt_`x' = con_`x'/CI
+
+        * Store in dataset
+        replace varname = "`x'" in 1
+        replace elasticity = `elas_`x'' in 1
+        replace conc_index = `CI_`x'' in 1
+        replace contribution = `con_`x'' in 1
+        replace perc_contrib = `prcnt_`x'' in 1
+
+        * Prepare for next result
+        set obs _N+1
+    }
+}
 
 
