@@ -1,0 +1,55 @@
+This is BibTeX, Version 0.99d (TeX Live 2022)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: paper-draft.aux
+The style file: sn-basic.bst
+Database file #1: bibliography.bib
+Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
+Warning--to sort, need author or key in Haddad2015
+Warning--empty author in Haddad2015
+Warning--empty journal in provost2008machine
+Warning--missing publisher in Saxena2018
+Warning--empty chapter and pages in Saxena2018
+Warning--empty journal in seed2010diagt
+Warning--missing institution in USAID2018
+You've used 51 entries,
+            3545 wiz_defined-function locations,
+            1038 strings with 15772 characters,
+and the built_in function-call counts, 37131 in all, are:
+= -- 3446
+> -- 1454
+< -- 23
++ -- 576
+- -- 430
+* -- 3113
+:= -- 5601
+add.period$ -- 82
+call.type$ -- 51
+change.case$ -- 407
+chr.to.int$ -- 50
+cite$ -- 60
+duplicate$ -- 2942
+empty$ -- 3036
+format.name$ -- 566
+if$ -- 7718
+int.to.chr$ -- 2
+int.to.str$ -- 1
+missing$ -- 347
+newline$ -- 162
+num.names$ -- 201
+pop$ -- 988
+preamble$ -- 1
+purify$ -- 355
+quote$ -- 0
+skip$ -- 889
+stack$ -- 0
+substring$ -- 2635
+swap$ -- 744
+text.length$ -- 0
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 447
+warning$ -- 7
+while$ -- 204
+width$ -- 0
+write$ -- 593
+(There were 7 warnings)

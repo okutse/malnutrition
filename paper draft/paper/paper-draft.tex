@@ -111,59 +111,65 @@ Survey, 2014 - 2022}
 %%                 \dgr{MSc, PhD}}\email{iauthor@gmail.com}
 %%=============================================================%%
 
-\author*[1,2]{\fnm{Amos} \sur{Okutse} }\email{\href{mailto:amos_okutse@brown.edu}{\nolinkurl{amos\_okutse@brown.edu}}}
+\author*[1,2]{\fnm{Amos
+O.} \sur{Okutse} }\email{\href{mailto:amos_okutse@brown.edu}{\nolinkurl{amos\_okutse@brown.edu}}}
 
-\author[2]{\fnm{Second} \sur{Author} }
+\author[2]{\fnm{Henry} \sur{Athiany} }
 
-\author[2]{\fnm{Third} \sur{Author} }
-
-\author[2]{\fnm{Fourth} \sur{Author} }
+\author[1]{\fnm{Joseph W.} \sur{Hogan} }
 
 
 
   \affil*[1]{\orgdiv{Department of Biostatistics}, \orgname{Brown
 University School of Public
-Health}, \orgaddress{\city{Providence}, \country{USA}, \postcode{2903}, \state{RI}, \street{121
+Health}, \orgaddress{\city{Providence}, \country{USA}, \state{RI}, \street{121
 South Main St}}}
-  \affil[2]{\orgname{Other Organisation}}
-  \affil[3]{\orgname{Other Organisation}}
+  \affil[2]{\orgdiv{Department of Math and Statistics}, \orgname{School
+of Physical and Mathematical Sciences, Jomo Kenyatta University of
+Agriculture and
+Technology}, \orgaddress{\city{Nairobi}, \country{Kenya}}}
 
-\abstract{\textbf{Purpose}: The abstract serves both as a general
-introduction to the topic and as a brief, non-technical summary of the
-main results and their implications. The abstract must not include
-subheadings (unless expressly permitted in the journal's Instructions to
-Authors), equations or citations. As a guide the abstract should not
-exceed 200 words. Most journals do not set a hard limit however authors
-are advised to check the author instructions for the journal they are
-submitting to.
+\abstract{\textbf{Background}: Child malnutrition remains a critical
+public health issue, with socioeconomic factors playing a significant
+role. Despite overall progress in reducing under-five child malnutrition
+in Kenya, disparities persist. This paper explores trends, determinants,
+contributions of these factors to health inequality, and their clinical
+utility as diagnostic tests for chronic under-five child malnutrition.
 
-\textbf{Methods:} The abstract serves both as a general introduction to
-the topic and as a brief, non-technical summary of the main results and
-their implications. The abstract must not include subheadings (unless
-expressly permitted in the journal's Instructions to Authors), equations
-or citations. As a guide the abstract should not exceed 200 words. Most
-journals do not set a hard limit however authors are advised to check
-the author instructions for the journal they are submitting to.
+\textbf{Methods:} We used data from the Kenya Demographic and Health
+Survey (2014 -- 2022) and analyzed malnutrition using three indicators:
+stunting, underweight, and wasting. Malnutrition determinants were
+analyzed using multivariable logistic regression. Trends in
+socioeconomic inequality were analyzed using concentration indices.
+Wagstaff decomposition was used to explore the contributions of
+determinants of child malnutrition. Diagnostic utility was investigated
+using sensitivity, specificity, predictive values, and area under the
+ROC curve.
 
-\textbf{Results:} The abstract serves both as a general introduction to
-the topic and as a brief, non-technical summary of the main results and
-their implications. The abstract must not include subheadings (unless
-expressly permitted in the journal's Instructions to Authors), equations
-or citations. As a guide the abstract should not exceed 200 words. Most
-journals do not set a hard limit however authors are advised to check
-the author instructions for the journal they are submitting to.
+\textbf{Results:} Socioeconomic inequality in under-five child
+malnutrition increased between 2014 and 2022 despite an overall decrease
+in prevalence. Children from the poorest (AOR = 1.67; 95\% Confidence
+Interval {[}CI{]}: 1.24 -- 2.26) and poorer (AOR = 1.46; 95\%CI: 1.08 --
+1.98) socioeconomic quintiles are disproportionately affected by
+stunting. A child's age (in months) (AOR = 1.01; 95\%CI: 1.01 -- 1.02),
+birth order number (AOR = 1.05; 95\%CI: 1.01 -- 1.10), and gender (male)
+(AOR = 1.45; 95\%CI: 1.30 -- 1.62) were also significantly associated
+with increased odds of stunting. Socioeconomic inequality was the
+largest contributing factor to health inequality. Sensitivity,
+specificity, and AUC values were 67.4\% (95\% CI: 66.4\% -- 68.4\%),
+50.6\% (95\%CI: 50.0\% - 51.1\%), and 0.59 (95\%CI: 0.58 -- 0.60),
+respectively when using socioeconomic status as a screening tool for
+stunting.
 
-\textbf{Conclusion:} The abstract serves both as a general introduction
-to the topic and as a brief, non-technical summary of the main results
-and their implications. The abstract must not include subheadings
-(unless expressly permitted in the journal's Instructions to Authors),
-equations or citations. As a guide the abstract should not exceed 200
-words. Most journals do not set a hard limit however authors are advised
-to check the author instructions for the journal they are submitting
-to.\}}
+\textbf{Conclusion:} Socioeconomic disparities remain a barrier despite
+strides in reducing child malnutrition in Kenya. Targeted interventions
+addressing these disparities are essential for sustainable improvements
+in child health. Our findings underscore the importance of integrating
+socioeconomic factors into public health strategies to combat child
+malnutrition effectively.}
 
 \keywords{Child malnutrition, Decomposition, Socioeconomic
-disparities, Kenya, Stunting, Underweight, Wasting, Demographic Health
+inequality, Kenya, Stunting, Underweight, Wasting, Demographic Health
 Survey}
 
 
@@ -174,64 +180,59 @@ Survey}
 \section{Introduction}\label{sec1}}
 
 Child Malnutrition remains a dominant public health challenge globally.
-In 2022, for instance, about 148.1 million (22.3\%) children below 5
-years were stunted, whereas 45 million (6.8\%) and 37 million (5.6\%)
-were wasted and overweight, respectively \citep{who2023}. While there
-has been some progress in the actualization of the global nutrition
-targets, this progress is slow, and the levels of malnutrition continue
-to persist. Africa and Asia account for almost half the world's child
-malnutrition burden \citep{who2023}.
+In 2022 about 148.1 million (22.3\%) children below 5 years were
+stunted, whereas 45 million (6.8\%) and 37 million (5.6\%) were wasted
+and overweight, respectively \citep{who2023}. While there has been some
+progress in the actualization of the global nutrition targets, this
+progress is slow, and the levels of malnutrition continue to persist.
+Africa and Asia account for almost half the world's child malnutrition
+burden \citep{who2023}.
 
-In the East African region, stunting prevalence (32.6\%) was higher than
-the global average (22.3\%), whereas wasting and overweight were 5.2\%
-and 4.0\%, respectively \citep{IEG2022}. With the possibility of
-suffering from more than one form of malnutrition, children remain
-largely susceptible to the perilous effects posed by this condition.
-According to nutrition statistics, 3.62\% of all children under the age
-of five years (15.95 million) have been reported as being both stunted
-and wasted, whereas 1.87\% of all children (8.23 million) have been
-reported to experience both stunting and overweight globally
-\citep{global}.
+In East Africa, stunting prevalence (32.6\%) was higher than the global
+average (22.3\%), whereas wasting and overweight were 5.2\% and 4.0\%,
+respectively \citep{IEG2022}. With the possibility of suffering from
+more than one form of malnutrition, children remain largely susceptible
+to the perilous effects posed by this condition. According to nutrition
+statistics, 3.62\% of all children under the age of five years (15.95
+million) have been reported as being both stunted and wasted, whereas
+1.87\% of all children (8.23 million) have been reported to experience
+both stunting and overweight globally \citep{global}.
 
 In the first half of 2022, Kenya reported about 942,000 cases of acute
 malnutrition among children between 6 and 59 months
 \citep{Bhavnani2023}. According to the 2022 Kenya Demographic and Health
-Survey (KDHS) \citep{KNBSICF2023}, 18\% of children under 5 are stunted
-(chronically undernourished), 5\% are wasted (acutely malnourished),
-whereas 3\% and 10\% are overweight and underweight, respectively. While
-Kenya has substantially reduced the burden of child malnutrition,
-undernutrition is estimated to cost the country over US\$38.3 billion in
-Gross Domestic Product (GDP) following losses in workforce labor and
-productivity for 2010--2030 \citep{USAID2018}.
+Survey (KDHS) \citep{KNBSICF2023}, 18\% of children under five are
+stunted (chronically undernourished), 5\% are wasted (acutely
+malnourished), whereas 3\% and 10\% are overweight and underweight,
+respectively. While Kenya has substantially reduced the burden of child
+malnutrition, undernutrition is estimated to cost the country over
+US\$38.3 billion in Gross Domestic Product (GDP) following losses in
+workforce labor and productivity for 2010 -- 2030 \citep{USAID2018}.
 
 Malnutrition denotes ``a state of nutrition in which a deficiency, or an
 excess, of energy, protein, and micronutrient causes measurable adverse
-effects on tissue/ body form (body shape, size, and composition),
-function, and clinical outcome'' \citep{stratton2003}. Malnutrition has
-been attributed to several diverse interlinked factors with detrimental
-short and long-term effects \citep{Pelletier1995, Pelletier2003}. Not
-only does it affect the physical and cognitive development of a child,
-but it also drastically increases their risk of infections and
-contributes negatively to their mortality and morbidity
+effects on tissue/body form (body shape, size, and composition),
+function, and clinical outcome'' \citep{stratton2003}. This has been
+attributed to several diverse interlinked factors with detrimental short
+and long-term effects \citep{Pelletier1995, Pelletier2003}. Not only
+does it affect the physical and cognitive development of a child, but it
+also drastically increases their risk of infections and contributes
+negatively to their mortality and morbidity
 \citep{Rice2000, jonah2018, victora2008, kar2008, mendez1999, walker2015, rabbani2016}.
 
-Stunting, underweight, and wasting remain the recommended three
-indicators of malnutrition \citep{jonah2018}. Stunting refers to low
-height for age and reflects the growth in linear terms achieved at the
-age at which the anthropometric measurements were taken. Underweight is
-low weight for age, resulting from a short-term lack of food. In
-contrast, wasting is severe undernutrition resulting from inadequate
-food intake and infections \citep{jonah2018}. In children under 5 years,
-stunting is the most significant measure of overall health and
-well-being capable of highlighting salient social disparities
-\citep{deOnis2016}. Moreover, because stunting measures linear growth in
-children, it is considered an accurate measure of malnutrition in the
-long term due to its insensitivity to variations in food consumption
+Stunting, underweight, and wasting remain the recommended indicators of
+malnutrition \citep{jonah2018}. Stunting refers to low height for age
+and reflects the growth in linear terms achieved at the age at which the
+anthropometric measurements were taken. Underweight is low weight for
+age, resulting from a short-term lack of food. In contrast, wasting is
+severe undernutrition resulting from inadequate food intake and
+infections \citep{jonah2018}. In children under 5 years, stunting is the
+most significant measure of overall health and well-being capable of
+highlighting salient social disparities \citep{deOnis2016}. Moreover,
+because stunting measures linear growth in children, it is considered an
+accurate measure of malnutrition in the long term due to its
+insensitivity to variations in food consumption
 \citep{Hoddinott2013, Zere2003}.
-
-\hypertarget{socioeconomic-disparities-in-child-malnutrition}{%
-\subsection{Socioeconomic disparities in child
-malnutrition}\label{socioeconomic-disparities-in-child-malnutrition}}
 
 Kenya is classified as a middle-income country based on its Gross
 National Income (GNI) per capita. Under this classification frame,
@@ -247,15 +248,12 @@ country's population positively. For instance, economic advancements are
 expected to create employment opportunities, translating into increased
 disposable income, improved health, and education
 \citep{Bloom2004, Ranis2000}. Improved living standards following
-economic advancement are expected to translate into exceptional and
-improved nutritional consequences for children and adults.
-
-The economic status associated with a country has been shown in previous
-studies to result in improved health status of a population
-\citep{Marmot2002, Ettner1996}. However, economic advancement does not
-necessarily translate to equitable distribution of positive prospects
-across the population. Often, these tend to be skewed, with some groups
-benefiting more than others.
+economic advancement are expected to translate into improved nutritional
+consequences for children and adults \citep{Marmot2002, Ettner1996}.
+However, economic advancement does not necessarily translate to
+equitable distribution of positive prospects across the population.
+Often, these tend to be skewed, with some groups benefiting more than
+others.
 
 Kenya has made commendable progress in reducing the burden of
 malnutrition as part of the Standard Development Goals (SDGs), which
@@ -267,17 +265,21 @@ consequences are of substantial interest to the government, public
 health professionals, and policymakers.
 
 This study contributes significantly to the available knowledge on
-socioeconomic disproportions in the Kenyan child malnutrition burden,
-examining trends in stunting, underweight, and wasting across
-socioeconomic groups, geographical locations, and selected household,
-child, maternal, and paternal characteristics. We also examine the
-determinants of child malnutrition and employ standard procedures of
-inequality to quantify the trends {[}36{]} and decompose vicissitudes in
-the concentration indices to determine factors that drive socioeconomic
-disparities in child malnutrition in Kenya. The study utilizes current
-data from the Kenya Demographic Health Survey (DHS) (2014 to 2022) to
-comprehensively analyze the scope of the problem, specifically focusing
-on children below five years.
+socioeconomic disproportions in the Kenyan child malnutrition burden.
+First, we examine trends in stunting, underweight, and wasting across
+socioeconomic groups, geography, and selected household, child,
+maternal, and paternal characteristics. Second, we explore determinants
+of child malnutrition and employ standard procedures of inequality
+analysis to quantify their contributions to health inequality in Kenya.
+Finally, we examine the independent clinical utility of household
+socioeconomic status and significant child characteristics in acute
+malnutrition screening. The current study uses data from the Kenya
+Demographic Health Survey (DHS) (2014 to 2022) to comprehensively
+analyze the scope of the problem, specifically focusing on children
+below five years. We provide evidence to inform the design of competent
+public health strategies and targeted interventions for curbing
+under-five child malnutrition and provide a profound understanding of
+socioeconomic inequality and child well-being.
 
 \hypertarget{sec11}{%
 \section{Methods}\label{sec11}}
@@ -286,14 +288,14 @@ on children below five years.
 \subsection{Study data}\label{study-data}}
 
 We utilized data from the 2014 and 2022 Kenya Demographic and Health
-Surveys (KDHS) (standard DHS). These surveys adopted a two-stage
-stratified cluster sampling approach: clusters in the first stage and
-households in the second. In 2014, a response rate of 99\% was achieved
-from 39,679 households, and in 2022, a 98\% response rate from 38,731
-occupied households {[}KNBSICF2015; \citet{KNBSICF2023}{]}. Analyses
-considered all live children (0-59 months) of interviewed mothers,
-excluding those with missing anthropometric data. The data was weighted
-for non-response and used with DHS authorization.
+Surveys (KDHS) (standard DHS). These surveys adopt a two-stage
+stratified cluster sampling approach with clusters sampled in the first
+stage and households at the second stage. In 2014, a response rate of
+99\% was achieved from 39,679 households, and in 2022, a 98\% response
+rate from 38,731 occupied households \citep{KNBSICF2015, KNBSICF2023}.
+Analyses considered all live children (0-59 months) of interviewed
+mothers, excluding those with missing anthropometric data. The data was
+weighted for non-response and used with DHS authorization.
 
 \hypertarget{variables}{%
 \subsection{Variables}\label{variables}}
@@ -323,18 +325,31 @@ acute and chronic malnutrition \citep{kien_trends_2016}.
 \hypertarget{covariates}{%
 \subsubsection{Covariates}\label{covariates}}
 
-In this study, we considered a comprehensive set of determinants linked
-to child malnutrition. Child-specific variables included age (in
-months), gender, place and region of residence, delivery location, and
-birth order. At the household level, we accounted for characteristics
-such as religion and socioeconomic status. Maternal indicators included
-age, education level, and birth interval, while we also considered
-paternal education. These determinants are grounded in existing
-literature and were available in our data set
+We considered a comprehensive set of determinants linked to child
+malnutrition. Child-specific variables included age (in months), gender,
+place and region of residence, delivery location, and birth order. At
+the household level, we accounted for religion and socioeconomic status.
+Maternal indicators were age, education level, and birth interval
+whereas paternal education was considered as a paternal characteristic.
+Our choice of these covariates is grounded in existing literature and
+availability in our data set
 \citep{jonah2018, kien_trends_2016, Farah2019}.
 
 \hypertarget{statistical-analysis}{%
 \subsection{Statistical analysis}\label{statistical-analysis}}
+
+\hypertarget{weighted-prevalence-of-child-malnutrition}{%
+\subsubsection{Weighted prevalence of child
+malnutrition}\label{weighted-prevalence-of-child-malnutrition}}
+
+The weighted prevalence of stunting, underweight, and wasting was
+estimated in relation to maternal, child, and household characteristics.
+Overall differences across categories were examined using a design-based
+Pearson chi-squared test whereas the significance of differences in
+group means was analyzed using two-sample t-tests for continuous
+variables. The significance of the differences in trends in child
+malnutrition by socioeconomic status between 2014 and 2022 was similarly
+analyzed using two-sample proportion tests.
 
 \hypertarget{analysis-of-disparities-in-child-malnutrition}{%
 \subsubsection{Analysis of disparities in child
@@ -344,7 +359,7 @@ The extent and trends of socioeconomic disparities in stunting,
 underweight, and wasting were quantified using concentration indices
 (CIs) estimated based on the corresponding z-scores
 \citep{odonnell_analyzing_2008, Wagstaff1991, Wagstaff2000}.
-Concentration indices quantify the socioeconomic disparities in a health
+Concentration indices quantify socioeconomic disparities in a health
 variable and allow assessment of the extent and levels of disparities.
 CIs were computed as double the area between the concentration curve and
 the line of equality -- the \(45^{\circ}\) line.
@@ -355,54 +370,78 @@ CI = \frac{2}{\mu} \textrm{cov}(h, r)
 \label{eq:one}
 \end{equation}
 
-In Equation \ref{eq:one}, \(\mu\) is the average of malnutrition
+In Equation (\ref{eq:one}), \(\mu\) is the average of malnutrition
 (stunting, underweight, and wasting) in children under five children,
 \(h\) denotes observation-specific child malnutrition, and \(r\) is the
 rank of the socioeconomic status of a household. The CI of a given
 health variable usually takes values between -1 and +1, with 0
 suggesting perfect equity of the health variable between the poorest and
 the richest socioeconomic groups. Negative values suggest a higher
-concentration of malnutrition among the poorest group, and positive
+concentration of malnutrition among the poorest group whereas positive
 values suggest a higher concentration of inequity among the richest
 socioeconomic group
-\citep{Akombi2019, jonah2018, kien_trends_2016, Wagstaff2000}. As in
-Kien et al. \citep{kien_trends_2016}, the continuous forms of the
-variables for stunting, underweight, and wasting were employed to
-enhance precision.
+\citep{Akombi2019, jonah2018, kien_trends_2016, Wagstaff2000}.
 
-\hypertarget{analysis-of-determinants-of-child-malnutrition}{%
-\subsubsection{Analysis of determinants of child
-malnutrition}\label{analysis-of-determinants-of-child-malnutrition}}
+\hypertarget{analysis-of-determinants-of-child-malnutrition-and-utility-in-screening-for-child-stunting}{%
+\subsubsection{Analysis of determinants of child malnutrition and
+utility in screening for child
+stunting}\label{analysis-of-determinants-of-child-malnutrition-and-utility-in-screening-for-child-stunting}}
 
 Determinants of child malnutrition were investigated using binary
 logistic regression. Separate models were fitted for stunting,
 underweight, and wasting. Odds ratios were computed for each adjustment
-covariate to examine associations between the child malnutrition
-indicators and each explanatory variable in \ref{covariates}. Results
-from the fitted logistic regression models were used in the construction
-and decomposition of the Wagstaff normalized CIs described in
-\ref{decompose}.
+covariate to examine associations between malnutrition indicators and
+explanatory variables in \ref{covariates}. Results from the fitted
+logistic regression models were used in evaluating the clinical utility
+of each significant determinant of under-five child stunting. Our
+analyses here focus on this indicator since it suggests chronic
+malnutrition \citep{jonah2018}.
+
+We estimated the diagnostic performance of a household's socioeconomic
+status and child characteristics, which we found to significantly impact
+under-five child stunting, including age, gender, and birth order. These
+factors were each used to independently predict a child's nutritional
+status (stunting) and compute sensitivity, specificity, predictive
+values, and area under the receiver operating characteristic curve
+(AUC). We leveraged the \texttt{diagti} command in STATA
+\citep{seed2010diagt}. Stunting had a 22.7\% (95\%CI: 22.3\% - 23.1\%)
+prevalence in this dataset, suggesting a classification problem with an
+imbalanced data set. Evaluating the clinical utility of these risk
+factors would result in highly optimistic results characterized by a
+high hit ratio but poor explanatory capabilities.
+
+Most classifiers rely on threshold scores to generate predictions, which
+greatly impacts the trade-off between positive and negative errors
+\citep{provost2008machine}. We used threshold-moving, a technique for
+training a cost-sensitive classifier. We adjusted the decision threshold
+to accurately predict the minority class and address class imbalance by
+setting the optimal threshold based on a random search maximizing the
+AUC \citep{haibo2013imbalanced}. The choice of the AUC as a performance
+metric was informed by its insensitivity to changes in class
+distribution. An AUC of 0.5 suggests limited discriminatory ability of a
+test that is no better than random guessing. Values between 0.7 to 0.8
+are acceptable, 0.8 to 0.9 are excellent whereas those above 0.9 are
+considered exceptional \citep{Fawcett2006, Mandrekar2010}.
 
 \hypertarget{decompose}{%
 \subsubsection{Decomposition of socioeconomic inequities in child
 malnutrition}\label{decompose}}
 
-Contributions of the determinants of malnutrition in children under five
-to the observed socioeconomic disparities were examined through a
-decomposition analysis. These decompositions were restricted to stunting
+Contributions of determinants of malnutrition in children under five to
+the observed socioeconomic disparities were examined through a
+decomposition analysis. This decomposition was restricted to stunting
 and underweight, indicators that exhibited substantial differences
-between 2014 and 2022. This analysis framework utilized categorical
-forms of the response variables.
+between 2014 and 2022.
 
 We considered a linear regression model where the response variable
 (\(y\)) is modeled as a linear combination of the \(k\) determinants
 (\(X_k\)) as: \begin{equation}
 y = \alpha + \sum_{k} \beta_k X_k + \epsilon
 \label{eq:two}
-\end{equation} where \(\beta_k\) denotes the coefficient of \(X_k\) (the
-set of explanatory variables) and \(\epsilon\) is the error term.
+\end{equation} where \(\beta_k\) denotes the coefficient of \(X_k\) and
+\(\epsilon\) is the error term.
 
-In terms of the CI for the response \(y\), \ref{eq:two} reduces to:
+In terms of the CI for the response \(y\), (\ref{eq:two}) becomes:
 \begin{equation}
 CI = \sum_{k} \left( \frac{\beta_k \bar{X}_k}{\mu} \right) CI_k + \frac{G CI_{\epsilon}}{\mu}
 \label{eq:three}
@@ -412,44 +451,51 @@ coefficient of each determinant, \(CI_k\) denotes the CI of each of the
 regressors in the model, and \(G CI_\epsilon\) denotes the generalized
 concentration index for the error term, \(\epsilon\).
 
-Equation \ref{eq:three} has two components: the explained
+Equation (\ref{eq:three}) has two components: the explained
 \(\left( (\beta_k \bar{X}_k)/ \mu)CI_k\right)\) and the unexplained
 component (\(GCI_{\epsilon}/ \mu\)). \((\beta_k \bar{X}_k)/\mu\) is the
-elasticity --the effect of each \$CI\_k \$ on the overall CI of the
-outcome variable, \(y\) \citep{Wagstaff2000, Wagstaff2003}.
-
-We employed the Wagstaff normalization technique for CI values and used
-total differential decomposition to decipher the determinants'
-contribution to CI variations. This decomposition follows from Wagstaff
-et al. \citep{Wagstaff2003}. It permits approximation of the effects of
-child malnutrition disparities on variations in regression coefficients,
-variations in means of malnutrition determinants, and variations in the
-extent of inequity in child malnutrition determinants. These
-decompositions were applied to height-for-age and weight-for-age
-z-scores.
-
-The formula for the decomposition applied was: \begin{equation}
-\begin{split}
-dC & = \text{-}\frac{c}{\mu}d\alpha + \sum_{k}\frac{\bar{X}_k}{\mu} \left( CI_k \text{–} CI\right)d\beta_k \\
-& + \sum_{k} \frac{\beta_k}{\mu} \left( CI_k \text{-} CI\right)d \bar{X}_k + \sum_{k} \frac{\beta_k \bar{X}_k}{\mu} dCI_k + d\frac{GCI}{\mu}{\epsilon}
-\end{split}
-\label{eq:four}
-\end{equation} where \(dC\) denotes the overall change in the CI,
-\(d\alpha\) constant value, \(d\beta_k\) the coefficients of the
-determinants, \(d\bar{X}_k\) mean values of the determinants, \(dCI_k\)
-determinant-specific CI and \(d((GCI)/\mu)_{\epsilon}\), the error term
-\citep{Wagstaff2003}.
+elasticity denoting the effect of each \$CI\_k \$ on the overall CI of
+the outcome variable, \(y\). We employed the Wagstaff normalization
+technique for CI values given our use of binary outcomes (the CI bounds
+would otherwise not be between -1 and +1)
+\citep{Wagstaff2000, Wagstaff2003}.
 
 \hypertarget{sec2}{%
 \section{Results}\label{sec2}}
 
-\hypertarget{weighted-prevalence-of-child-malnutrition}{%
+\hypertarget{weighted-prevalence-of-child-malnutrition-1}{%
 \subsection{Weighted prevalence of child
-malnutrition}\label{weighted-prevalence-of-child-malnutrition}}
+malnutrition}\label{weighted-prevalence-of-child-malnutrition-1}}
 
-Figure \ref{tab:one} highlights the weighted prevalence of under five
+Table \ref{tab:one} highlights the weighted prevalence of under-five
 child malnutrition by selected child, household, maternal, and paternal
-characteristics grouped by the survey year.
+characteristics grouped by the survey year (2014 - 2022). The sample
+size for the 2014 KDHS was n = 18702 (53\%) and for the 2022 KDHS was n
+= 16883 (47\%). In 2014, 26\% (n = 4466) of children were found to be
+stunted, 11\% (n = 1841) were underweight, and 4\% (n = 701) were
+wasted. In contrast, the percentage of stunted children decreased to
+18\% (n = 2665) in 2022, while underweight and wasting decreased to 10\%
+(n = 1543) and 5\% (n = 752), respectively. The analyzed sample
+consisted of 51\% male and 49\% female children.
+
+In 2014, the prevalence of stunting, underweight, and wasting was
+significantly higher among older male children delivered at home in
+rural areas, in households with the poorest socioeconomic status, and
+identifying as Protestant (\(p < 0.05\)). Most stunted children in this
+year were born to mothers between 25 and 34 years of age, with at most a
+primary school education (\(p < 0.05\)). We did not find evidence of a
+significant association between maternal age, employment status and
+child stunting (\(p > 0.05\)). In 2022, stunting prevalence remained
+similar, except that it was higher among children delivered in public
+hospitals.
+
+The prevalence of child underweight or wasting was also higher among
+older male children who were delivered in protestant rural households
+with the poorest socio-economic status (\(p < 0.05\)). These children
+were mostly born to parents with at most primary education in the Rift
+Valley region (\(p < 0.05\)). Similar patterns in the prevalence of
+underweight and wasting were observed in 2022, except that most of these
+cases were deliveries in hospitals within the public sector.
 
 \renewcommand{\arraystretch}{0.8}
 
@@ -478,13 +524,13 @@ characteristics grouped by the survey year.
 \multicolumn{19}{l}{\rule{0pt}{1em}\textsuperscript{*} $P$ based on a Pearson chi-square test for categorical variable and T-test for continuous variables.}\\
 \endlastfoot
 Weighted n & 17291 & 4466 (25.8) &  & 17291 & 1841 (10.6) &  & 17291 & 701 (4.1) &  & 15336 & 2665 (17.5) &  & 15368 & 1543 (10.0) &  & 15329 & 752 (4.9) & \\
-Child age, mean (SE) &  & 30.8 (0.2) & 0.00 &  & 31.8 (0.5) & 0.00 &  & 26.1 (1.0) & 0.00 &  & 27.7 (0.4) & 0.08 &  & 30.8 (0.5) & 0.00 &  &  & \\
-Birth interval, mean (SE) &  & 39.5 (0.5) & 0.00 &  & 38.2 (0.7) & 0.00 &  & 39.8 (1.2) & 0.00 &  & 43.8 (0.8) & 0.00 &  & 41.8 (1.0) & 0.00 &  &  & \\
-Birth order , mean (SE) &  & 3.6 (0.1) & 0.00 &  & 3.8 (0.1) & 0.00 &  & 3.6 (0.1) & 0.01 &  & 3.3 (0.1) & 0.00 &  & 3.5 (0.1) & 0.00 &  &  & \\
+Child age, mean (SE) &  & 30.8 (0.2) & 0.00 &  & 31.8 (0.5) & 0.00 &  & 26.1 (1.0) & 0.00 &  & 27.7 (0.4) & 0.08 &  & 30.8 (0.5) & 0.00 &  & 30.8 (0.7) & 0.00\\
+Birth interval, mean (SE) &  & 39.5 (0.5) & 0.00 &  & 38.2 (0.7) & 0.00 &  & 39.8 (1.2) & 0.00 &  & 43.8 (0.8) & 0.00 &  & 41.8 (1.0) & 0.00 &  & 43.1 (1.5) & 0.00\\
+Birth order , mean (SE) &  & 3.6 (0.1) & 0.00 &  & 3.8 (0.1) & 0.00 &  & 3.6 (0.1) & 0.01 &  & 3 (0.1) & 0.00 &  & 3.5 (0.1) & 0.00 &  & 3.5 (0.09) & \\
 \textbf{Child sex} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.09} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{} & \textbf{0.01}\\
 \addlinespace
 \hspace{1em}Male & 8763 & 2586 (57.9) &  & 8763 & 1028 (55.9) &  & 8763 & 382 (54.6) &  & 7755 & 1523 (57.2) &  & 7767 & 857 (55.6) &  & 7758 & 420 (55.9) & \\
-\hspace{1em}Female & 8528 & 1880 (42.1) &  & 8528 & 812 (44.1) &  & 8528 & 318 45.4) &  & 7581 & 1142 (42.8) &  & 7601 & 685 (44.4) &  & 7571 & 331 (44.1) & \\
+\hspace{1em}Female & 8528 & 1880 (42.1) &  & 8528 & 812 (44.1) &  & 8528 & 318 (45.4) &  & 7581 & 1142 (42.8) &  & 7601 & 685 (44.4) &  & 7571 & 331 (44.1) & \\
 \textbf{Delivery place} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.00} & \textbf{} & \textbf{} & \textbf{0.00}\\
 \hspace{1em}Home & 6513 & 2157 (48.5) &  & 6512 & 1033 (56.4) &  & 6512 & 390 (55.9) &  & 1110 & 302 (16.9) &  & 1116 & 205 (23.4) &  & 1116 & 104 (25.7) & \\
 \hspace{1em}Public & 7919 & 1749 (39.3) &  & 7919 & 629 (34.3) &  & 7919 & 235 (33.6) &  & 6095 & 1147 (64.2) &  & 6114 & 513 (58.6) &  & 6094 & 217 (53.1) & \\
@@ -547,8 +593,15 @@ Birth order , mean (SE) &  & 3.6 (0.1) & 0.00 &  & 3.8 (0.1) & 0.00 &  & 3.6 (0.
 \subsection{Trends in child malnutrition and socioeconomic
 inequality}\label{trends-in-child-malnutrition-and-socioeconomic-inequality}}
 
-Figure \ref{tab:two} summarizes the prevalence of child malnutrition by
-the household socioeconomic status between 2014 and 2022.
+Table \ref{tab:two} summarizes the prevalence of child malnutrition by
+the household socioeconomic status between 2014 and 2022. Stunting and
+underweight decreased substantially during this period. The absolute
+reduction was 9.1 and 1.7\% for stunting and wasting, respectively.
+Underweight prevalence showed the smallest decline between 2014 and 2022
+(0.6\%). A more detailed examination revealed a substantial decline in
+underweight only in the poorest socioeconomic status quintile compared
+to stunting, where significant reductions occurred across all the
+socioeconomic status groups.
 
 \begin{table}[!h]
 
@@ -582,7 +635,19 @@ the household socioeconomic status between 2014 and 2022.
 \end{table}
 
 Table \ref{tab:three} presents the concentration indices of under five
-child malnutrition.
+child malnutrition. The CIs of stunting and underweight were
+significantly different from 0 between 2014 and 2022 (\(p < 0.05\)),
+whereas wasting did not show a significant difference during this period
+(\(p > 0.05\)). All differences in CIs were negative, suggesting that
+children from the poorest socioeconomic groups are more likely to be
+stunted, underweight, or wasted relative to those from the richest
+households. Additionally, absolute values of the CIs of stunting and
+underweight in 2022 were higher than in 2014, suggesting that
+inequalities in under-five child underweight and stunting increased
+during this period. On the other hand, the CI for wasting in 2022 was
+lower relative to 2014, suggesting that the inequality in child wasting
+declined during this period. The difference in the CI for wasting
+between 2014 and 2022 was, however, not significant (\(p > 0.05\)).
 
 \begin{table}[!h]
 
@@ -590,9 +655,11 @@ child malnutrition.
 \centering
 \begin{tabular}[t]{lcccccc}
 \toprule
-\multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{Stunted (HAZ $<$ -2 SD)}} & \multicolumn{2}{c}{\textbf{Underweight (WAZ $<$ -2 SD)}} & \multicolumn{2}{c}{\textbf{Wasted (WHZ $<$ -2 SD)}} \\
+\multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{Stunted}} & \multicolumn{2}{c}{\textbf{Underweight}} & \multicolumn{2}{c}{\textbf{Wasted}} \\
 \cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7}
-  & CI (SE) & $P*$ & CI (SE) & $P*$ & CI (SE) & $P*$\\
+\multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{(HAZ $<$ -2 SD)}} & \multicolumn{2}{c}{\textbf{(WAZ $<$ -2 SD)}} & \multicolumn{2}{c}{\textbf{(WHZ $<$ -2 SD)}} \\
+\cmidrule(l{3pt}r{3pt}){2-3} \cmidrule(l{3pt}r{3pt}){4-5} \cmidrule(l{3pt}r{3pt}){6-7}
+  & CI (SE) & $p*$ & CI (SE) & $p*$ & CI (SE) & $p*$\\
 \midrule
 Year 2014 & -0.15 (0.01) & 0.00 & -0.27 (0.02) & 0.00 & 12.37 (22.61) & 0.58\\
 Year 2022 & -0.79 (0.01) & 0.00 & -0.88 (0.01) & 0.00 & -1.96 (0.05) & 0.00\\
@@ -600,9 +667,9 @@ Diff & -0.64 (0.01) & 0.00 & -0.61 (0.02) & 0.00 & -14.33 (22.62) & 0.53\\
 \bottomrule
 \multicolumn{7}{l}{\rule{0pt}{1em}\textit{Note: }}\\
 \multicolumn{7}{l}{\rule{0pt}{1em}Diff: difference in child malnutrition concentration indices between 2014 and 2022;}\\
-\multicolumn{7}{l}{\rule{0pt}{1em}SE: standard error; SD: standard deviation; HAZ: height-for-age Z-score; WAZ: weight-for-age Z-score;}\\
-\multicolumn{7}{l}{\rule{0pt}{1em}WHZ: weight-for-height Z-score}\\
-\multicolumn{7}{l}{\rule{0pt}{1em}\textsuperscript{*} $P$-value based on a two-tailed independence test comparing the differences in the CIs with a test value of 0}\\
+\multicolumn{7}{l}{\rule{0pt}{1em}SE: standard error; SD: standard deviation; HAZ: height-for-age Z-score;}\\
+\multicolumn{7}{l}{\rule{0pt}{1em}WAZ: weight-for-age Z-score; WHZ: weight-for-height Z-score}\\
+\multicolumn{7}{l}{\rule{0pt}{1em}\textsuperscript{*} $p$-value based on a two-tailed independence test.}\\
 \end{tabular}
 \end{table}
 
@@ -611,16 +678,34 @@ Diff & -0.64 (0.01) & 0.00 & -0.61 (0.02) & 0.00 & -14.33 (22.62) & 0.53\\
 malnutrition}\label{determinants-of-child-malnutrition}}
 
 Table \ref{tab:four} presents a summary of the determinants of under
-five child stunting, underweight, and wasting based on the multivariable
-logistic regression model. Results are based on the analysis of the
-aggregate 2014 and 2022 KDHS datasets.
+five child stunting, underweight, and wasting based on the multiple
+logistic regression. Results are based on analysis of the aggregate 2014
+and 2022 KDHS datasets. We found that a child's age (in months) (AOR =
+1.01; 95\%CI: 1.01 -- 1.02), birth order number (AOR = 1.05; 95\%CI:
+1.01 -- 1.10), gender (male vs female) (AOR = 1.45; 95\%CI: 1.30 --
+1.62), and household's socioeconomic status were significantly
+associated with increased odds of stunting. The odds of stunting were
+substantially higher for children from households in the poorest (AOR =
+1.67; 95\%CI: 1.24 -- 2.26) and poorer (AOR = 1.46; 95\%CI: 1.08 --
+1.98) socioeconomic quintiles relative to children from households in
+the wealthiest socioeconomic status group.
+
+Additionally, we found that the risk of underweight and wasting varied
+depending on the child's sex and mother's age. Male children were more
+likely to be underweight (AOR = 1.35; 95\%CI: 1.17 -- 1.55) and wasted
+(AOR = 1.22; 95\%CI: 1.00 -- 1.48) than female children. Similarly,
+children born to mothers aged above 35 years were more likely to be
+underweight (AOR = 1.49; 95\%CI: 1.08 -- 2.05) and wasted (AOR = 1.60;
+95\%CI: 1.04 -- 2.46). On the other hand, older children were more
+likely to be underweight than younger children (AOR = 1.01; 95\%CI: 1.00
+-- 1.01).
 
 \renewcommand{\arraystretch}{0.8}
-\begin{table}[!h]
+\begin{table}
 
 \caption{\label{tab:four}Determinants of under five child malnutrition, KDHS 2014 -- 2022}
 \centering
-\begin{tabular}[t]{lllllll}
+\begin{tabular}[t]{>{\raggedright\arraybackslash}p{2cm}llllll}
 \toprule
 \multicolumn{1}{c}{\textbf{ }} & \multicolumn{2}{c}{\textbf{Stunted}} & \multicolumn{2}{c}{\textbf{Underweight}} & \multicolumn{2}{c}{\textbf{Wasted}} \\
 \multicolumn{1}{c}{ } & \multicolumn{2}{c}{(HAZ$<$-2SD)} & \multicolumn{2}{c}{(WAZ$<$-2SD)} & \multicolumn{2}{c}{(WHZ$<$-2SD)} \\
@@ -693,18 +778,99 @@ Birth order number & 1.05 (1.01 - 1.10) & 0.01 & 0.96 (0.91 - 1.00) & 0.07 & 0.9
 \end{table}
 \renewcommand{\arraystretch}{1}
 
+Table \ref{tab:sens} summarizes the results based on screening for child
+stunting using a household's socioeconomic status, child's age, gender,
+and birth order, respectively. The sensitivity of a household's
+socioeconomic status as a diagnostic tool for under-five child
+malnutrition was 67.4\% (95\% CI: 66.4\% -- 68.4\%), whereas the
+specificity was 50.6\% (95\%CI: 50.0\% - 51.1\%). The ability of a
+household's socioeconomic status to discriminate between stunted and
+non-stunted children was above random guessing (AUC = 0.59; 95\%CI: 0.58
+-- 0.60). On the other hand, the sensitivity, specificity, and AUC
+values based on screening using the child's age were 49.6\% (95\%CI:
+48.5\% - 50.7\%), 52.6\% (95\%CI: 52.0\% - 53.2\%), and 0.51 (95\%CI:
+0.50 -- 0.52), respectively. On the other hand, sensitivity and
+specificity values based on screening for under-five child stunting
+using the child's gender and age were 57.0\% (95\%CI: 55.9\% -- 58.0\%),
+51.2\% (95\%CI: 50.6\% - 51.8\%) and 44.9\% (95\%CI: 43.8\% - 46.0\%),
+63.8\% (95\%CI: 63.2\% - 64.3\%). The discriminatory ability based on
+using the child's age was limited (AUC = 0.51; 95\%CI: 0.50 -- 0.52),
+whereas that based on using gender (AUC = 0.54; 95\%CI: 0.53 -- 0.55)
+and birth order (AUC = 0.54; 95\%CI: 0.54 -- 0.55) was slightly above
+average.
+
+\begin{table}
+
+\caption{\label{tab:sens}Results based on screening for child stunting using a household's socioeconomic status (SES), child's age, gender, and birth order number}
+\centering
+\begin{tabular}[t]{>{}lcc}
+\toprule
+\textbf{Variable} & \textbf{Metric} & \textbf{95\% Confidence Interval (CI)}\\
+\midrule
+\textbf{Household SES} &  & \\
+\textbf{} & Sensitivity & 67.4 (66.4 - 68.4)\\
+\textbf{} & Specificity & 50.6 (50.0 - 51.1)\\
+\textbf{} & AUC & 0.59 (0.58 - 0.60)\\
+\textbf{} & NPV & 84.1 (83.5 - 84.6)\\
+\addlinespace
+\textbf{} & PPV & 28.6 (28.0 - 29.2)\\
+\textbf{Child's age} &  & \\
+\textbf{} & Sensitivity & 49.6 (48.5 - 50.7)\\
+\textbf{} & Specificity & 52.6 (52.0 - 53.2)\\
+\textbf{} & AUC & 0.51 (0.50 - 0.52)\\
+\addlinespace
+\textbf{} & NPV & 78.0 (77.4 - 78.6)\\
+\textbf{} & PPV & 23.5 (22.9 - 24.2)\\
+\textbf{Child's gender} &  & \\
+\textbf{} & Sensitivity & 57.0 (55.9 - 58.0)\\
+\textbf{} & Specificity & 51.2 (50.6 - 51.8)\\
+\addlinespace
+\textbf{} & AUC & 0.54 (0.53 - 0.55)\\
+\textbf{} & NPV & 80.2 (79.6 - 80.8)\\
+\textbf{} & PPV & 25.5 (24.9 - 26.2)\\
+\textbf{Birth order number} &  & \\
+\textbf{} & Sensitivity & 44.9 (43.8 - 46.0)\\
+\addlinespace
+\textbf{} & Specificity & 63.8 (63.2 - 64.3)\\
+\textbf{} & AUC & 0.54 (0.54 - 0.55)\\
+\textbf{} & NPV & 79.8 (79.2 - 80.3)\\
+\textbf{} & PPV & 26.7 (26.0 - 27.5)\\
+\bottomrule
+\multicolumn{3}{l}{\rule{0pt}{1em}\textit{Note: }}\\
+\multicolumn{3}{l}{\rule{0pt}{1em}SES: Socioeconomic status}\\
+\multicolumn{3}{l}{\rule{0pt}{1em}AUC: Are under the curve}\\
+\multicolumn{3}{l}{\rule{0pt}{1em}NPV: Negative predictive value}\\
+\multicolumn{3}{l}{\rule{0pt}{1em}PPV: Positive predictive value.}\\
+\end{tabular}
+\end{table}
+
 \hypertarget{decomposition-of-the-concentration-indices-for-stunting-and-underweight}{%
 \subsection{Decomposition of the concentration indices for stunting and
 underweight}\label{decomposition-of-the-concentration-indices-for-stunting-and-underweight}}
 
 In Table \ref{tab:five} we present each determinant of child
 malnutrition and its percentage contribution to the observed inequality
-in child stunting and underweight for the period 2014 and 2022. Negative
-values suggest contributions to decreases in socioeconomic inequality
-whereas positive values indicate contributions to increase in
-inequality.
+in child stunting and underweight for the period 2014 and 2022. We
+decomposed the CIs of stunting and underweight which differed
+significantly between 2014 and 2022. The percentage contribution of
+variables in the Wagstaff decomposition represents the contribution of
+the variable to the overall health inequality. Negative values of this
+quantity suggest the variable contributes to reductions in overall
+inequality in child malnutrition.
 
-\begin{sidewaystable}[!h]
+A household's socioeconomic status (0.89), maternal education (0.22),
+and birth order number (0.16) contributed the most toward the observed
+disparities in child stunting in 2014. The contribution of a household's
+socioeconomic status increased to 1.7 in 2022, whereas that of a child's
+birth order number decreased to 0.06. The contribution of maternal
+education to inequality in child stunting disappeared in 2022. In both
+2014 and 2022, socioeconomic status (0.96), maternal education (0.58),
+and paternal education (0.39) were the largest contributors to
+disparities in child underweight. Socioeconomic status is a substantial
+factor contributing toward inequality in under-five children stunted and
+underweight.
+
+\begin{sidewaystable}[!htpb]
 
 \caption{\label{tab:five}Decomposition of the concentration indices and contributions of determinants of under five child stunting and underweight, 2014 and 2022}
 \centering
@@ -738,48 +904,222 @@ Wealth index & 0.677 & 0.896 & 0.693 & 1.744 & 0.693 & 0.969 & 0.693 & 0.969\\
 \hypertarget{sec12}{%
 \section{Discussion}\label{sec12}}
 
+Nutrition remains a well-known health measure for children under five
+years old. In the current study, we investigated the trends of
+socioeconomic inequalities in child malnutrition, determinants, the
+utility of these determinants in child malnutrition screening, and the
+overall contributions of these determinants to disparities in child
+malnutrition in Kenya. Our findings indicate decreases in the prevalence
+of all three forms of child malnutrition across the periods examined.
+Stunting, the most common of child malnutrition indicators, recorded the
+highest decline (8\%) between 2014 and 2022. Analyses by sex of the
+child revealed a consistently higher prevalence of all three indicators
+among male children compared to females. We found the highest burden of
+child malnutrition to be in rural areas despite reports of increases in
+poverty levels in urban areas \citep{kenya2018basic}.
+
+The prevalence of child malnutrition was higher in children from
+impoverished households and reduced substantially as the socioeconomic
+status improved from the poorest to the wealthiest. The improvements in
+nutrition status from the poor to the rich can be explained to be the
+result of improvements in purchasing power and access to food and
+quality healthcare \citep{Abuya2012}. Concentration indices (in absolute
+values) for stunting and underweight increased significantly between
+2014 and 2022 for stunting and underweight, suggesting that
+socioeconomic disparities in these malnutrition indicators worsened
+between these years. These analyses revealed a disproportionate effect
+of socioeconomic inequality on child malnutrition, where children from
+poor economic groups are disadvantaged relative to those from the
+wealthiest economic groups. Even though the overall under-five child
+malnutrition declined between 2014 and 2022, the inequalities persisted.
+This result aligns with previous studies where a disconnect has been
+reported between economic endowment and the distribution of these
+rewards between economic groups \citep{jonah2018, May2014, mariara2009}.
+
+Our analyses of determinants of under-five child malnutrition revealed
+the child's age, birth order number, gender, and household's
+socioeconomic status as significant factors associated with an increased
+risk of child stunting. These findings conform with those found in
+previous studies in low and middle-income countries
+\citep{mariara2009, Abuya2012, rabbani2016, jonah2018, kien_trends_2016, Akombi2019}.
+Birth order has been implicated as a significant predictor of child
+stunting, with higher-order children (\textgreater fifth order) being
+more likely to be stunted due to less attention and care from their
+parents \citep{rahman2016}. Additionally, with births spaced in quick
+succession, high-order children are likely to receive limited lacteal
+feeding, a factor that predisposes them to malnutrition
+\citep{Gudu2020}. The effect of age can be explained similarly. We
+explain the higher risk of stunted growth among male children to be
+partly the result of their faster growth rate, which increases their
+susceptibility to stunted growth when malnourished, higher biological
+fragility \citep{Kraemer2000} and preferential treatment of the female
+child \citep{Wamani2007, Farah2019}.
+
+The socioeconomic status of a household is a substantial factor in
+determining the nutritional status of children and the inequality in
+under-five child malnutrition. A similar result on the contribution of
+socioeconomic status of a household to disparities in under-five child
+malnutrition has been reported elsewhere in low and middle-income
+countries \citep{kien_trends_2016}. The contribution of this factor
+appeared to increase in 2022 relative to 2014. The nutritional status of
+the Kenyan population has improved as part of the standard development
+goals. However, the rapid population growth recorded over the years has
+yet to be at par with the rate of growth of the economy. The result has
+been that a more significant subset of the population has remained in
+poverty \citep{odonnell_analyzing_2008}.
+
+Consequently, the disparities in the population's economic status have
+worked to reduce access to essential services for people with low
+incomes. While the rich have access to high-quality education,
+healthcare, and food, the poor struggle to meet their basic needs
+\citep{Masiye2010, Masuku2017, Pathak2011}. With limited finances, a
+household's ability to afford a stable supply of food is significantly
+reduced, the effects of which include adverse effects on child growth
+and cognitive development
+\citep{Perignon2014, Bryan2004, Hackett2009, Mutisya2015, Saxena2018}.
+
+Stunting remains a significant indicator of child stunting. In assessing
+the nutritional status of children, anthropometric data
+--weight-for-height, height-for-age, and weight-for-age -- are often
+collected. These data are often prone to random error due to the
+complexities involved in their collection in younger children
+\citep{Farah2019}. We explored the clinical utility of a household's
+socioeconomic status, child's gender, age, and birth order as diagnostic
+factors for child stunting. We found that the ability of a household's
+socioeconomic status to distinguish stunted from non-stunted children
+was higher than that of age, gender, and birth order, with a 67\%
+sensitivity. We allude this performance to the significance of
+socioeconomic status in determining child health outcomes.
+
+Findings presented in this investigation bear a lot of merits. First, we
+used nationally representative population-based survey data to examine
+the socioeconomic disparities in child malnutrition and provide crucial
+insight into the design of strategies to curb this inequality. These
+data present the advantage of relatively large sample sizes and
+commendable response rates (\textgreater{} 90\%).
+
+Second, we found that socioeconomic disparities in under-five child
+malnutrition have substantially increased since 2014, even though the
+overall prevalence of child malnutrition waned. This has been partly due
+to commendable improvements in health status and changes in income and
+lifestyle, among other factors \citep{kien_trends_2016}. While the
+country has experienced economic growth, our findings suggest a
+disconnect between this growth and the distribution of wealth in the
+general population, with poor households disproportionately affected.
+Consequently, inequality in under-five child malnutrition has worsened
+even though the overall health indicators have improved.
+
+Third, we decomposed the concentration indices of each determinant of
+under-five child malnutrition to decipher the nature of their
+contribution to the observed socioeconomic disparities in stunting and
+underweight. Our results thus break ground and foster knowledge on
+causes and variations in under-five child malnutrition prevalence by
+income groups. Fourth, we further explored the utility of significant
+malnutrition-related factors as screening tests for chronic malnutrition
+and found some potential for socioeconomic status.
+
+The results from this investigation provide pivotal insights for public
+health policy and practice. For instance, we found a household's
+socioeconomic status to be the largest contributor to health inequality,
+with children from poor households being the most vulnerable. These
+findings will enable public health policymakers to strategically target
+socioeconomic differences to develop effective and thorough childhood
+nutrition interventions through policies that improve outcomes for
+children from poor households while bridging the gap between rural and
+urban development through equitable distribution of resources.
+
+Furthermore, the public health sector can adopt strategies including the
+provision of easily accessible medical care, improved sanitation, and
+provision of clean drinking water. The government should consider
+strategies to reduce migration of people from rural areas to urban areas
+through job creation schemes in rural areas, providing child support to
+households in poverty, diversifying source of livelihoods for people in
+rural areas through provisions of viable alternatives such as commerce,
+provision of unemployment benefits as well as taking insurance for the
+agricultural sector to enhance food security and enhance equity.
+
+The following limitations should be considered while interpreting the
+findings of this study. First, due to reliance on cross-sectional study
+data, our findings cannot be construed as suggesting a causal
+relationship between socioeconomic indices and child malnutrition.
+Second, residence was classified as either urban or rural. Classifying
+this variable into these two localities might pose a problem following
+the heterogeneity associated with large cities and the unavailability of
+data to quantify these dissimilarities. Third, our analysis adjusted for
+potentially confounding variables which did not have substantial
+missingness and might not include all possible confounders. However, our
+employment of standard statistical practices and the included covariates
+allow for a robust analysis of the scope of the problem.
+
 \hypertarget{sec13}{%
 \section{Conclusion}\label{sec13}}
 
+Understanding the nature of under-five child malnutrition and its
+variations by socioeconomic quintiles is crucial in the design of
+strategies that target individuals who are most affected by malnutrition
+and in keeping the existing disparities under check. Socioeconomic
+inequality in under-five child malnutrition increased between 2014 and
+2022 despite an overall decrease in prevalence, with children from poor
+households disproportionately affected. These inequalities are fueled by
+differences in endowments, a significant proportion of which is held by
+the household's socioeconomic status. Our exploration of the utility of
+a child's age, gender, birth order number, and household's socioeconomic
+status as a diagnostic tool for under-five child stunting showed some
+potential for a household's socioeconomic status. Despite the economic
+growth Kenya has experienced in the recent past, there is a disconnect
+between this growth and income distribution between social classes.
+Efforts to tackle inequalities in under-five child malnutrition should
+target reducing the perceived differences in endowments between the rich
+and poor. The Kenyan government should enhance poor households' access
+to food, education, and essential resources.
+
 \backmatter
-
-\bmhead{Supplementary information}
-
-\bmhead{Acknowledgments}
 
 \hypertarget{declarations}{%
 \section*{Declarations}\label{declarations}}
 \addcontentsline{toc}{section}{Declarations}
 
-Some journals require declarations to be submitted in a standardised
-format. Please check the Instructions for Authors of the journal to
-which you are submitting to see if you need to complete this section. If
-yes, your manuscript must contain the following sections under the
-heading `Declarations':
+\begin{itemize}
+\tightlist
+\item
+  Ethics approval and consent to participate
+\end{itemize}
+
+Not applicable
+
+\begin{itemize}
+\tightlist
+\item
+  Consent for publication
+\end{itemize}
+
+Not applicable
+
+\begin{itemize}
+\tightlist
+\item
+  Availability of data and materials
+\end{itemize}
+
+All data pertaining to the study are available from the Demographic and
+Health Survey at \url{https://dhsprogram.com/data/} upon reasonable
+request.
+
+\begin{itemize}
+\tightlist
+\item
+  Competing interests
+\end{itemize}
+
+The authors have no competing interests to declare.
 
 \begin{itemize}
 \tightlist
 \item
   Funding
-\item
-  Conflict of interest/Competing interests (check journal-specific
-  guidelines for which heading to use)
-\item
-  Ethics approval
-\item
-  Consent to participate
-\item
-  Consent for publication
-\item
-  Availability of data and materials
-\item
-  Code availability
-\item
-  Authors' contributions
 \end{itemize}
 
-\noindent If any of the sections are not relevant to your manuscript,
-please include the heading and write `Not applicable' for that section.
+Not applicable
 
 \bibliography{bibliography.bib}
 

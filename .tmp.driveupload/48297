@@ -1,0 +1,196 @@
+\relax 
+\providecommand\hyper@newdestlabel[2]{}
+\bibstyle{sn-basic}
+\providecommand\HyperFirstAtBeginDocument{\AtBeginDocument}
+\HyperFirstAtBeginDocument{\ifx\hyper@anchor\@undefined
+\global\let\oldcontentsline\contentsline
+\gdef\contentsline#1#2#3#4{\oldcontentsline{#1}{#2}{#3}}
+\global\let\oldnewlabel\newlabel
+\gdef\newlabel#1#2{\newlabelxx{#1}#2}
+\gdef\newlabelxx#1#2#3#4#5#6{\oldnewlabel{#1}{{#2}{#3}}}
+\AtEndDocument{\ifx\hyper@anchor\@undefined
+\let\contentsline\oldcontentsline
+\let\newlabel\oldnewlabel
+\fi}
+\fi}
+\global\let\hyper@last\relax 
+\gdef\HyperFirstAtBeginDocument#1{#1}
+\providecommand\HyField@AuxAddToFields[1]{}
+\providecommand\HyField@AuxAddToCoFields[2]{}
+\Newlabel{1}{1}
+\Newlabel{2}{2}
+\Newlabel{3}{3}
+\citation{who2023}
+\citation{who2023}
+\citation{IEG2022}
+\citation{global}
+\citation{Bhavnani2023}
+\citation{KNBSICF2023}
+\citation{USAID2018}
+\citation{stratton2003}
+\citation{Pelletier1995,Pelletier2003}
+\citation{Rice2000,jonah2018,victora2008,kar2008,mendez1999,walker2015,rabbani2016}
+\citation{jonah2018}
+\citation{jonah2018}
+\citation{deOnis2016}
+\citation{Hoddinott2013,Zere2003}
+\citation{jonah2018}
+\citation{Bloom2004,Ranis2000}
+\@writefile{toc}{\contentsline {section}{\numberline {1}Introduction}{2}{section.1}\protected@file@percent }
+\newlabel{sec1}{{1}{2}{Introduction}{section.1}{}}
+\citation{Marmot2002,Ettner1996}
+\citation{jonah2018,Haddad2015}
+\citation{KNBSICF2023}
+\citation{kien_trends_2016,jonah2018}
+\citation{jonah2018}
+\citation{WHO2010}
+\citation{kien_trends_2016}
+\citation{jonah2018,kien_trends_2016,Farah2019}
+\@writefile{toc}{\contentsline {section}{\numberline {2}Methods}{4}{section.2}\protected@file@percent }
+\newlabel{sec11}{{2}{4}{Methods}{section.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.1}Study data}{4}{subsection.2.1}\protected@file@percent }
+\newlabel{study-data}{{2.1}{4}{Study data}{subsection.2.1}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Variables}{4}{subsection.2.2}\protected@file@percent }
+\newlabel{variables}{{2.2}{4}{Variables}{subsection.2.2}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Outcome}{4}{subsubsection.2.2.1}\protected@file@percent }
+\newlabel{outcome}{{2.2.1}{4}{Outcome}{subsubsection.2.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Covariates}{4}{subsubsection.2.2.2}\protected@file@percent }
+\newlabel{covariates}{{2.2.2}{4}{Covariates}{subsubsection.2.2.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Statistical analysis}{4}{subsection.2.3}\protected@file@percent }
+\newlabel{statistical-analysis}{{2.3}{4}{Statistical analysis}{subsection.2.3}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.1}Weighted prevalence of child malnutrition}{4}{subsubsection.2.3.1}\protected@file@percent }
+\newlabel{weighted-prevalence-of-child-malnutrition}{{2.3.1}{4}{Weighted prevalence of child malnutrition}{subsubsection.2.3.1}{}}
+\citation{odonnell_analyzing_2008,Wagstaff1991,Wagstaff2000}
+\citation{odonnell_analyzing_2008}
+\citation{Akombi2019,jonah2018,kien_trends_2016,Wagstaff2000}
+\citation{jonah2018}
+\citation{seed2010diagt}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.2}Analysis of disparities in child malnutrition}{5}{subsubsection.2.3.2}\protected@file@percent }
+\newlabel{analysis-of-disparities-in-child-malnutrition}{{2.3.2}{5}{Analysis of disparities in child malnutrition}{subsubsection.2.3.2}{}}
+\newlabel{eq:one}{{1}{5}{Analysis of disparities in child malnutrition}{equation.2.1}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.3}Analysis of determinants of child malnutrition and utility in screening for child stunting}{5}{subsubsection.2.3.3}\protected@file@percent }
+\newlabel{analysis-of-determinants-of-child-malnutrition-and-utility-in-screening-for-child-stunting}{{2.3.3}{5}{Analysis of determinants of child malnutrition and utility in screening for child stunting}{subsubsection.2.3.3}{}}
+\citation{provost2008machine}
+\citation{haibo2013imbalanced}
+\citation{Fawcett2006,Mandrekar2010}
+\citation{Wagstaff2000,Wagstaff2003}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.3.4}Decomposition of socioeconomic inequities in child malnutrition}{6}{subsubsection.2.3.4}\protected@file@percent }
+\newlabel{decompose}{{2.3.4}{6}{Decomposition of socioeconomic inequities in child malnutrition}{subsubsection.2.3.4}{}}
+\newlabel{eq:two}{{2}{6}{Decomposition of socioeconomic inequities in child malnutrition}{equation.2.2}{}}
+\newlabel{eq:three}{{3}{6}{Decomposition of socioeconomic inequities in child malnutrition}{equation.2.3}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {3}Results}{7}{section.3}\protected@file@percent }
+\newlabel{sec2}{{3}{7}{Results}{section.3}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Weighted prevalence of child malnutrition}{7}{subsection.3.1}\protected@file@percent }
+\newlabel{weighted-prevalence-of-child-malnutrition-1}{{3.1}{7}{Weighted prevalence of child malnutrition}{subsection.3.1}{}}
+\gdef \LT@i {\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{20.5359pt}\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{17.69046pt}\LT@entry 
+    {1}{20.5359pt}\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{17.69046pt}\LT@entry 
+    {1}{20.5359pt}\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{17.69046pt}\LT@entry 
+    {1}{20.5359pt}\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{17.69046pt}\LT@entry 
+    {1}{20.5359pt}\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{17.69046pt}\LT@entry 
+    {1}{20.5359pt}\LT@entry 
+    {1}{54.67912pt}\LT@entry 
+    {1}{17.69046pt}}
+\newlabel{tab:one}{{1}{8}{Weighted prevalence of child malnutrition}{table.1}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {1}{Weighted prevalence of stunting, underweight, and wasting among children under five years by selected child, household, maternal, and paternal characteristics (2014 -- 2022)}}{8}{table.1}\protected@file@percent }
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.2}Trends in child malnutrition and socioeconomic inequality}{10}{subsection.3.2}\protected@file@percent }
+\newlabel{trends-in-child-malnutrition-and-socioeconomic-inequality}{{3.2}{10}{Trends in child malnutrition and socioeconomic inequality}{subsection.3.2}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {2}{\ignorespaces Malnutrition prevalence by household socioeconomic status, \% (SE)}}{10}{table.2}\protected@file@percent }
+\newlabel{tab:two}{{2}{10}{Malnutrition prevalence by household socioeconomic status, \% (SE)}{table.2}{}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.3}Determinants of child malnutrition}{10}{subsection.3.3}\protected@file@percent }
+\newlabel{determinants-of-child-malnutrition}{{3.3}{10}{Determinants of child malnutrition}{subsection.3.3}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {3}{\ignorespaces Under five child malnutrition concentration indices (CI), 2014 -- 2022}}{11}{table.3}\protected@file@percent }
+\newlabel{tab:three}{{3}{11}{Under five child malnutrition concentration indices (CI), 2014 -- 2022}{table.3}{}}
+\citation{kenya2018basic}
+\citation{Abuya2012}
+\citation{jonah2018,May2014,mariara2009}
+\@writefile{toc}{\contentsline {subsection}{\numberline {3.4}Decomposition of the concentration indices for stunting and underweight}{12}{subsection.3.4}\protected@file@percent }
+\newlabel{decomposition-of-the-concentration-indices-for-stunting-and-underweight}{{3.4}{12}{Decomposition of the concentration indices for stunting and underweight}{subsection.3.4}{}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Discussion}{12}{section.4}\protected@file@percent }
+\newlabel{sec12}{{4}{12}{Discussion}{section.4}{}}
+\citation{mariara2009,Abuya2012,rabbani2016,jonah2018,kien_trends_2016,Akombi2019}
+\citation{rahman2016}
+\citation{Gudu2020}
+\citation{Kraemer2000}
+\citation{Wamani2007,Farah2019}
+\citation{kien_trends_2016}
+\citation{odonnell_analyzing_2008}
+\citation{Masiye2010}
+\citation{Perignon2014,Bryan2004,Hackett2009,Mutisya2015,Saxena2018}
+\citation{Farah2019}
+\citation{kien_trends_2016}
+\@writefile{toc}{\contentsline {section}{\numberline {5}Conclusion}{14}{section.5}\protected@file@percent }
+\newlabel{sec13}{{5}{14}{Conclusion}{section.5}{}}
+\bibdata{bibliography.bib}
+\bibcite{Haddad2015}{{1}{2015}{{Had}}{{}}}
+\bibcite{Abuya2012}{{2}{2012}{{Abuya et~al}}{{Abuya, Ciera, and Kimani-Murage}}}
+\bibcite{Akombi2019}{{3}{2019}{{Akombi et~al}}{{Akombi, Agho, Renzaho, Hall, and Merom}}}
+\newlabel{declarations}{{5}{15}{Declarations}{section*.2}{}}
+\@writefile{toc}{\contentsline {section}{Declarations}{15}{section*.2}\protected@file@percent }
+\bibcite{who2023}{{4}{2023}{{BANK}}{{}}}
+\bibcite{Bhavnani2023}{{5}{2023}{{Bhavnani et~al}}{{Bhavnani, Schlager, Donnay, Reul, Schenker, Stauffer, and Patel}}}
+\bibcite{Bloom2004}{{6}{2004}{{Bloom et~al}}{{Bloom, Canning, and Sevilla}}}
+\bibcite{Bryan2004}{{7}{2004}{{Bryan et~al}}{{Bryan, Osendarp, Hughes, Calvaresi, Baghurst, and Klinken}}}
+\bibcite{Ettner1996}{{8}{1996}{{Ettner}}{{}}}
+\bibcite{Farah2019}{{9}{2019}{{Farah et~al}}{{Farah, Endris, and Gebreyesus}}}
+\bibcite{Fawcett2006}{{10}{2006}{{Fawcett}}{{}}}
+\bibcite{IEG2022}{{11}{2022{}}{{Group}}{{}}}
+\bibcite{global}{{12}{2022{}}{{Group}}{{}}}
+\bibcite{Gudu2020}{{13}{2020}{{Gudu et~al}}{{Gudu, Obonyo, Omballa, Oyugi, Kiilu, Githuku, Gura, and Ransom}}}
+\bibcite{Hackett2009}{{14}{2009}{{Hackett et~al}}{{Hackett, Melgar-Quiñonez, and Álvarez}}}
+\bibcite{haibo2013imbalanced}{{15}{2013}{{Haibo and Yunqian}}{{}}}
+\bibcite{Hoddinott2013}{{16}{2013}{{Hoddinott et~al}}{{Hoddinott, Alderman, Behrman, Haddad, and Horton}}}
+\bibcite{jonah2018}{{17}{2018}{{Jonah et~al}}{{Jonah, Sambu, and May}}}
+\bibcite{mariara2009}{{18}{2009}{{Kabubo-Mariara et~al}}{{Kabubo-Mariara, Ndenge, and Mwabu}}}
+\bibcite{kar2008}{{19}{2008}{{Kar et~al}}{{Kar, Rao, and Chandramouli}}}
+\bibcite{kien_trends_2016}{{20}{2016}{{Kien et~al}}{{Kien, Lee, Nam, Oh, Giang, and Minh}}}
+\bibcite{KNBSICF2023}{{21}{2023}{{KNBS and ICF}}{{}}}
+\bibcite{Kraemer2000}{{22}{2000}{{Kraemer}}{{}}}
+\bibcite{Mandrekar2010}{{23}{2010}{{Mandrekar}}{{}}}
+\bibcite{Marmot2002}{{24}{2002}{{Marmot}}{{}}}
+\bibcite{Masiye2010}{{25}{2010}{{Masiye et~al}}{{Masiye, Chama, Chitah, and Jonsson}}}
+\bibcite{May2014}{{26}{2014}{{May and Timæus}}{{}}}
+\bibcite{mendez1999}{{27}{1999}{{Mendez and Adair}}{{}}}
+\bibcite{Mutisya2015}{{28}{2015}{{Mutisya et~al}}{{Mutisya, Kandala, Ngware, and Kabiru}}}
+\bibcite{odonnell_analyzing_2008}{{29}{2008}{{O'Donnell et~al}}{{O'Donnell, van Doorslaer, Wagstaff, and Lindelow}}}
+\bibcite{deOnis2016}{{30}{2016}{{de~Onis and Branca}}{{}}}
+\bibcite{WHO2010}{{31}{2010}{{Organization}}{{}}}
+\bibcite{Pelletier2003}{{32}{2003}{{Pelletier and Frongillo}}{{}}}
+\bibcite{Pelletier1995}{{33}{1995}{{Pelletier et~al}}{{Pelletier, Frongillo, Schroeder, and Habicht}}}
+\bibcite{Perignon2014}{{34}{2014}{{Perignon et~al}}{{Perignon, Fiorentino, Kuong, Burja, Parker, Sisokhom, Chamnan, Berger, and Wieringa}}}
+\bibcite{provost2008machine}{{35}{2008}{{Provost}}{{}}}
+\bibcite{rabbani2016}{{36}{2016}{{Rabbani et~al}}{{Rabbani, Khan, Yusuf, and Adams}}}
+\bibcite{rahman2016}{{37}{2016}{{Rahman}}{{}}}
+\bibcite{Ranis2000}{{38}{2000}{{Ranis et~al}}{{Ranis, Stewart, and Ramirez}}}
+\bibcite{Rice2000}{{39}{2000}{{Rice et~al}}{{Rice, Sacco, Hyder, and Black}}}
+\bibcite{Saxena2018}{{40}{2018}{{Saxena}}{{}}}
+\bibcite{seed2010diagt}{{41}{2010}{{Seed}}{{}}}
+\bibcite{kenya2018basic}{{42}{2018}{{of~Statistics}}{{}}}
+\bibcite{stratton2003}{{43}{2003}{{Stratton et~al}}{{Stratton, Green, and Elia}}}
+\bibcite{USAID2018}{{44}{2018}{{USAID}}{{}}}
+\bibcite{victora2008}{{45}{2008}{{Victora et~al}}{{Victora, Adair, Fall, Hallal, Martorell, Richter, and Sachdev}}}
+\bibcite{Wagstaff2000}{{46}{2000}{{Wagstaff and van Doorslaer}}{{}}}
+\bibcite{Wagstaff1991}{{47}{1991}{{Wagstaff et~al}}{{Wagstaff, Paci, and van Doorslaer}}}
+\bibcite{Wagstaff2003}{{48}{2003}{{Wagstaff et~al}}{{Wagstaff, Doorslaer, and Watanabe}}}
+\bibcite{walker2015}{{49}{2015}{{Walker et~al}}{{Walker, Chang, Wright, Osmond, and Grantham-McGregor}}}
+\bibcite{Wamani2007}{{50}{2007}{{Wamani et~al}}{{Wamani, Åstrøm, Peterson, Tumwine, and Tylleskär}}}
+\bibcite{Zere2003}{{51}{2003}{{Zere and McIntyre}}{{}}}
+\@writefile{lot}{\contentsline {table}{\numberline {4}{\ignorespaces Determinants of under five child malnutrition, KDHS 2014 -- 2022}}{20}{table.4}\protected@file@percent }
+\newlabel{tab:four}{{4}{20}{Determinants of under five child malnutrition, KDHS 2014 -- 2022}{table.4}{}}
+\@writefile{lot}{\contentsline {table}{\numberline {5}{\ignorespaces Results based on screening for child stunting using a household's socioeconomic status (SES), child's age, gender, and birth order number}}{21}{table.5}\protected@file@percent }
+\newlabel{tab:sens}{{5}{21}{Results based on screening for child stunting using a household's socioeconomic status (SES), child's age, gender, and birth order number}{table.5}{}}
+\newlabel{RF1}{22}
+\@writefile{lot}{\contentsline {table}{\numberline {6}{\ignorespaces Decomposition of the concentration indices and contributions of determinants of under five child stunting and underweight, 2014 and 2022}}{22}{table.6}\protected@file@percent }
+\newlabel{tab:five}{{6}{22}{Decomposition of the concentration indices and contributions of determinants of under five child stunting and underweight, 2014 and 2022}{table.6}{}}
+\gdef \@abspage@last{22}

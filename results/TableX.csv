@@ -1,0 +1,24 @@
+﻿Household SES,,
+,Sensitivity,67.4 (66.4 - 68.4)
+,Specificity,50.6 (50.0 - 51.1)
+,AUC,0.59 (0.58 - 0.60)
+,NPV,84.1 (83.5 - 84.6)
+,PPV,28.6 (28.0 - 29.2)
+Child's age,,
+,Sensitivity,49.6 (48.5 - 50.7)
+,Specificity,52.6 (52.0 - 53.2)
+,AUC,0.51 (0.50 - 0.52)
+,NPV,78.0 (77.4 - 78.6)
+,PPV,23.5 (22.9 - 24.2)
+Child's gender,,
+,Sensitivity,57.0 (55.9 - 58.0)
+,Specificity,51.2 (50.6 - 51.8)
+,AUC,0.54 (0.53 - 0.55)
+,NPV,80.2 (79.6 - 80.8)
+,PPV,25.5 (24.9 - 26.2)
+Birth order number,,
+,Sensitivity,44.9 (43.8 - 46.0)
+,Specificity,63.8 (63.2 - 64.3)
+,AUC,0.54 (0.54 - 0.55)
+,NPV,79.8 (79.2 - 80.3)
+,PPV,26.7 (26.0 - 27.5)

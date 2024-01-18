@@ -1,7 +1,7 @@
 *********************************************************************
 * Socio-Economic Disparities in Child Malnutrition: Evidence from the Kenya Demographic and Health Surveys (2014 -- 2022)
 * Amos Ochieng Okutse
-* Brown UniversityPublic
+* Brown University
 * School of Public Health, Providence, RI, USA
 ***********************************************************
 *After data preparation
@@ -18,6 +18,7 @@ svyset psu [pweight = wt], strata(stratum) singleunit(centered) vce(linearized) 
 
 // Table 1: Weighted prevalence of child malnutrition in Kenya by selected factors
 svy: tab syear, count column perc format(%9.0f) // weighted sample size and proportion of n by year
+svy: tab child_sex, count column perc format(%9.0f)
 
 svy: tab child_sex if syear == 0, count column perc format(%9.0f)
 // 2014 stunting
@@ -519,4 +520,105 @@ foreach x of global X {
     }
 }
 
+
+* Child stunting could be predicted by SES, Age, Gender, and BORD. But what is the clinical utility of these predictors for it? How good are they?
+
+* We test how good these actually are starting with SES
+use "/Users/aokutse/Desktop/malnutrition/cleaned/kdhs.dta", clear
+svyset psu [pweight = wt], strata(stratum) singleunit(centered) vce(linearized)
+*xi:svy:logistic stun ib1.syear ib2.child_sex ib2.residence ib4.religion ib5.wealth_index ib0.maternal_edu ib0.maternal_age ib0.maternal_work ib0.paternal_edu ib0.delivery_place ib9.region birth_interval birth_order childs_age, noconstant
+
+*******************************************************
+*SCREENING FOR STUNTING USING HOUSEHOLD SES, CHILD AGE, BORD, & GENDER
+*******************************************************
+
+/*SES*/
+xi:svy: logistic stun ib5.wealth_index
+logistic stun ib5.wealth_index
+* compute the classification matrix based on using this covariate as a diagnostic test. we set the cutoff to the mean of the outcome due to class imbalance and the fact that the model has high percentage correctly predicted (hit ratio) and very low explanatory power (see ). 
+sum stun if e(sample)
+estat classification, cutoff(`r(mean)') /* estat classification only works with non-survey data: use threshold moving to counter imbalanced data*/
+
+/* predict probability of stunting given SES*/
+predict sesmod, pr
+/*classify as either stunted or not given this probability if greater than 0.50 */
+gen se_stun = (sesmod >= 0.2)
+
+/* use the diagt command to estimate the diagnostic efficacy of SES as a proxy*/
+diagti 5509 2663 13752 14059, level(95)
+
+/*CHILDS AGE*/
+logistic stun childs_age
+sum stun if e(sample)
+estat classification, cutoff(`r(mean)')
+diagti 4055 4117 13191 14620, level(95)
+
+/*CHILD GENDER*/
+logistic stun child_sex
+sum stun if e(sample)
+estat classification, cutoff(`r(mean)')
+diagti 4654 3518 13573 14238, level(95)
+
+
+/*BORD*/
+logistic stun birth_order
+sum stun if e(sample)
+estat classification, cutoff(`r(mean)')
+diagti 3670 4502 10073 17738, level(95)
+
+
+
+
+
+****
+* Load your data
+*use "your_data.dta"
+
+* Split your data into training and test datasets
+*sample 70, count
+*gen byte train = _n <= _N
+*gen byte test = _n > _N
+
+* Fit your model on the training dataset
+*logit outcome_var independent_vars if train
+
+* Predict probabilities on the test dataset
+
+*install package roctab
+*ssc install roctab
+***
+
+
+**********************************
+* Algorithm for threshold moving
+**********************************
+xi:svy: logistic stun ib5.wealth_index
+predict double pred_prob, pr
+
+* Initialize best threshold and best metric
+local best_threshold = .
+local best_metric = .
+
+* Loop over potential thresholds
+forvalues t = 0(.01)1 {
+    * Generate predicted outcome based on threshold
+    gen byte pred_outcome = (pred_prob >= `t')
+
+    * Calculate your evaluation metric
+    roctab stun pred_outcome, graph
+    local metric = r(area)
+
+    * Update best threshold and best metric if necessary
+    if `metric' > `best_metric' {
+        local best_threshold = `t'
+        local best_metric = `metric'
+    }
+
+    * Drop the temporary variable
+    drop pred_outcome
+}
+
+* Display the best threshold
+display `best_threshold'
+drop pred_prob pred_outcome
 
