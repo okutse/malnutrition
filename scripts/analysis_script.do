@@ -12,7 +12,6 @@
 use "/Users/aokutse/Desktop/malnutrition/cleaned/kdhs.dta", clear
 
 cd "/Users/aokutse/Desktop/malnutrition/results"
-
 // consider the complex survey design
 svyset psu [pweight = wt], strata(stratum) singleunit(centered) vce(linearized) // singleunit(centered) option accounts for the case if there is a single PSU within a stratum and adjusts for the possibility of correlated obs within the strata. vce(linearized) option uses the Taylor expansion for variance estimation which is efficient
 
